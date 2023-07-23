@@ -1,5 +1,51 @@
-$bgColor: red;
+$bgColor: pink;
+$w150: 150px;
+$w100: 100px;
+
+.container {
+    display: flex;
+    div {
+        // & div'in içindeki 'box' özelliğini tanımlamak için kullandı.
+        &.box1 {
+            background-color: $bgColor;
+            width: $w150;
+            height: $w100;
+            margin: 10px;
+        }
+    }
+}
+
+@mixin deneme($color, $w, $h) {
+
+    background-color: $color;
+    margin:10px;
+    width: $w;
+    height: $h;
+
+}
 
 .box1 {
+    @include deneme(blue,$w150 ,$w100 )
+}
+
+.box2 {
+    @include deneme(purple,$w150 ,$w100 );
+    //extend bir önceki uyguladığımız değişikleri başka elemente aktarmak için kullanılır.
+    @extend .box1;
+    width: $w100*2;
     background-color: $bgColor;
+}
+
+
+
+.box3 {
+    @include deneme(yellow,$w150 ,$w100 );
+    @extend .box1;
+    width: $w100*2 !important;
+    background-color: $bgColor;
+}
+
+
+.box4 {
+    @include deneme(green,$w150 ,$w100 )
 }

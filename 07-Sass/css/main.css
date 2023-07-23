@@ -1,3 +1,41 @@
-.box1 {
-  background-color: red;
+.container {
+  display: flex;
+}
+.container div.box1, .container div.box3, .container div.box2 {
+  background-color: pink;
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+}
+
+.box1, .box3, .box2 {
+  background-color: blue;
+  margin: 10px;
+  width: 150px;
+  height: 100px;
+}
+
+.box2 {
+  background-color: purple;
+  margin: 10px;
+  width: 150px;
+  height: 100px;
+  width: 200px;
+  background-color: pink;
+}
+
+.box3 {
+  background-color: yellow;
+  margin: 10px;
+  width: 150px;
+  height: 100px;
+  width: 200px !important;
+  background-color: pink;
+}
+
+.box4 {
+  background-color: green;
+  margin: 10px;
+  width: 150px;
+  height: 100px;
 }

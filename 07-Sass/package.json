@@ -1,7 +1,6 @@
 {
   "name": "07-sass",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass -w sass:css --no-source-map"
@@ -11,5 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.63.6"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
