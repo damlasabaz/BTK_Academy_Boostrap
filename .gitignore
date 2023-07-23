@@ -103,3 +103,7 @@ dist
 # TernJS port file
 .tern-port
 .vscode/settings.json
+
+#boostrap download package file
+
+bootstrap-5.3.0-dist/
