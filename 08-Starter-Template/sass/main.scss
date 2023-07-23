@@ -1,0 +1,5 @@
+//style ve bs_overrides dosyalarını burdan çağırıyoruz.
+
+@import "bs_overrides";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "style";
